@@ -65,19 +65,19 @@ public final class LockFileRemover extends CookieAction
     }
     
     private FileObject getLockFile(Project context) {
-        LOG.info("Project: "+context);
+        // LOG.info("Project: "+context);
         if(context==null) return null;
         
         FileObject projectDir = context.getProjectDirectory();
-        LOG.info("projectDir: "+projectDir);
+        // LOG.info("projectDir: "+projectDir);
         if(projectDir==null) return null;
         
         FileObject build = projectDir.getFileObject("build");
-        LOG.info("build: "+build);
+        // LOG.info("build: "+build);
         if(build==null) return null;
         
         FileObject testDir = build.getFileObject("testuserdir");
-        LOG.info("testDir: "+testDir);
+        // LOG.info("testDir: "+testDir);
         if(testDir==null) return null;
 
         return testDir.getFileObject("lock");
