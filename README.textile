@@ -1,0 +1,8 @@
+h1. LockFileRemover
+
+During debugging Netbeans Platform applications I have very often get an error message from Netbeans that alread an application is running. That's often enoug not true, but Netbeans just forgot to remove the
+build/testuserdir/lock file after debugging, and so I had to delete it manually.
+
+So I wrote this plugin which adds an action to the toolbar and context menu to remove that file easier then going via the file system.
+
+I'm happy if that tool is useful for you, too.
