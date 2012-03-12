@@ -14,6 +14,7 @@ import org.openide.nodes.Node;
 import org.openide.util.*;
 import org.openide.util.NbBundle.Messages;
 import org.openide.util.actions.CookieAction;
+import org.openide.util.actions.SystemAction;
 
 @ActionID(category = "Tools",
     id = "net.bogdoll.netbeans.tools.lfr.LockFileRemover")
@@ -29,20 +30,12 @@ public final class LockFileRemover extends CookieAction
     private final static Logger LOG = Logger.getLogger(LockFileRemover.class.getName());
 
     public LockFileRemover() {
-    }
-    
-    public LockFileRemover(Project aContext) {
         putValue("hideWhenDisabled", "true");
     }
-
+    
     @Override
     protected String iconResource() {
         return "net/bogdoll/netbeans/tools/lfr/draw-eraser.png"; // NOI18N
-    }
-        
-    @Override
-    public Action createContextAwareInstance(Lookup aLookup) {
-        return new LockFileRemover(aLookup.lookup(Project.class));
     }
     
     private boolean isRelevant(Project context) {
