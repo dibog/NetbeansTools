@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+OpenIDE-Module: net.bogdoll.netbeans.tools.svi
+OpenIDE-Module-Requires: org.openide.windows.IOProvider
+OpenIDE-Module-Localizing-Bundle: net/bogdoll/netbeans/tools/svi/Bundl
+ e.properties
+OpenIDE-Module-Specification-Version: 1.19
+
