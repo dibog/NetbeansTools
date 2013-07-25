@@ -1,5 +1,6 @@
 Manifest-Version: 1.0
 OpenIDE-Module: net.bogdoll.netbeans.tools.lfr
-OpenIDE-Module-Localizing-Bundle: net/bogdoll/netbeans/tools/lfr/Bundle.properties
+OpenIDE-Module-Localizing-Bundle: net/bogdoll/netbeans/tools/lfr/Bundl
+ e.properties
 OpenIDE-Module-Specification-Version: 1.13
 
